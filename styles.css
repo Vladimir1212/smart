@@ -1,0 +1,223 @@
+html {
+  height: 100%;
+}
+body {
+  min-width: 320px;
+}
+.main {
+  background-image: url(img/bg.png);
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 30px;
+}
+.main_down {
+  text-align: center;
+  padding-top: 10px;
+}
+.main_content {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.collapse,
+.navbar-collapse {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header {
+  padding-top: 10px;
+}
+.fa-bars {
+  color: #fff;
+  font-size: 28px;
+}
+.navbar-nav {
+  margin: 0 auto;
+}
+.nav-item {
+  margin-right: 25px;
+}
+.nav-link {
+  font: 18px 'Karla', sans-serif;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.nav-link:hover {
+  background-color: #2d2d35;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.nav-button {
+  font: 18px 'Karla', sans-serif;
+  color: white;
+  border: none;
+  background-color: #da6f5b;
+  border-radius: 6px;
+  padding: 10px 50px;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.nav-button:hover {
+  background-color: #930;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.nav-button__footer {
+  font: 18px 'Karla', sans-serif;
+  color: #da6f5b;
+  border-radius: 6px;
+  padding: 10px 50px;
+  background-color: white;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-color: #da6f5b;
+}
+.nav-button__footer:hover {
+  background-color: gray;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.h1 {
+  text-align: center;
+  font: 700 72px 'Playfair Display', serif;
+  color: white;
+  padding-top: 50px;
+}
+.h2 {
+  text-align: center;
+  font: 18px 'Karla', sans-serif;
+  color: white;
+}
+.form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 30px 40px;
+}
+.form_layer {
+  padding-top: 20px;
+}
+.form-control {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.form_description {
+  text-align: center;
+  font: 24px 'Playfair Display', serif;
+  color: white;
+}
+.form_layout {
+  text-align: center;
+  padding-top: 20px;
+}
+.footer {
+  padding-bottom: 30px;
+}
+.footer__descriptions {
+  font: 48px 'Playfair Display', serif;
+  text-align: center;
+  padding-top: 50px;
+}
+.footer__testimonial {
+  text-align: end;
+  padding-top: 30px;
+}
+.slider {
+  padding-top: 30px;
+}
+.slider__text {
+  font: italic 18px 'Karla', sans-serif;
+  color: black;
+  max-width: 750px;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0;
+  overflow: hidden;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+.slider__counter {
+  position: absolute;
+  bottom: -1.7rem;
+  left: 1rem;
+  z-index: 1;
+  font: 24px 'Playfair Display', serif;
+  font-weight: 600;
+  color: black;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+@media (max-width: 987px) {
+  .nav-item {
+    margin-right: 0px;
+  }
+  .navbar-nav,
+  .navbar_layout {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .collapse,
+  .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    padding-top: 15px;
+  }
+  .footer__testimonial {
+    text-align: center;
+  }
+}
+@media (max-width: 610px) {
+  .h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 450px) {
+  .h1 {
+    font-size: 46px;
+  }
+  .h2 {
+    padding: 10px 10px;
+  }
+}
